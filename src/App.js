@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from "react";
+import ReactDOM from "react-dom";
+function App(props){ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div className="cards">
+     <div className="card">
+       <img src={props.imgsrc} alt="myPic" className="card__img"/>
+       <div className="card__info">
+         <span className="card__category">{props.title}</span>
+         <h3 className="card__title"> {props.sname} </h3>
+         <a href={props.link} target="_blank">
+           <button>Watch Now</button>
+         </a>
+        </div>
+
+      </div>
+      
     </div>
+    </>
   );
 }
 
