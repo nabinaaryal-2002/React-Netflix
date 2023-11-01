@@ -12,6 +12,8 @@
   text-transform: uppercase;
   font-size: 13px;
   letter-spacing: 2px;
+  background-color: #fff;
+
 
 }
 .cards{
@@ -77,4 +79,14 @@ button{
   border: 1px solid black;
   cursor: pointer;
 
+}
+@media screen and (max-width: 760px){
+  .card{
+    width: 50%;
+  }
+}
+@media screen and (max-width: 480px){
+  .card{
+    width: 100%;
+  }
 }
